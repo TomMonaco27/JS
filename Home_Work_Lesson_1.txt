@@ -1,0 +1,57 @@
+1.Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по Фаренгейту. Подсказка: расчет идет по формуле Tf = (9 / 5) * Tc + 32, где Tf — температура по Фаренгейту, Tc — по Цельсию.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home work 1 task 1</title>
+</head>
+<body>
+  <script>
+  var Tc = -30;
+  var Tf = (9 / 5) * Tc + 32;
+  alert("Temp Celsius = " + Tc + "\nTemp Fahrenheit = " + Tf);
+  </script>
+</body>
+</html>
+
+2.Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывестись «Василий»).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home work 1 task 2</title>
+</head>
+<body>
+  <script>
+  var admin;
+  var name = "Василий";
+  admin = name
+  alert('output variable "admin": ' + admin);
+  </script>
+</body>
+</html>
+
+3.* Чему будет равно JS-выражение 1000 + "108"?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home work 1 task 3</title>
+</head>
+<body>
+  <script>
+  var a = 1000
+  var b = "108"
+  alert (a + b)
+  alert(typeof(1000 + "108") + (1000 + "108"))
+  </script>
+</body>
+</html>
+1000108 - происходит конкатенация строк, т.е. в JS походу свой специфический механизм приведения переменых к одному типу. Т.е. таким образом пременная а = 1000, численное значение, было приведенно автоматически в строку и сложилось со строковой переменной b. В Python например такой приём не прошёл бы и вызвалась бы ошибка (TypeError: unsupported operand type(s) for +: 'int' and 'str'). Т.е. приведение типов лежит на плечах програмера)
+
+4.* Самостоятельно разобраться с атрибутами тега script (async и defer).
+
+A)Специальные атрибуты async и defer используются для того, чтобы пока грузится внешний скрипт – браузер показал остальную (следующую за ним) часть страницы. Без них этого не происходит.
+Б)Разница между async и defer: атрибут defer сохраняет относительную последовательность скриптов, а async – нет. Кроме того, defer всегда ждёт, пока весь HTML-документ будет готов, а async – нет.
