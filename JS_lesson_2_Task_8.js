@@ -14,10 +14,10 @@ function power(val, pow) {
 	} else if (pow === 1) {
 		return val;
 	
-	} else if (val === 0){
+	} else if (val === 0) {
 		return 0;
 	
-	} else if (val === 1){
+	} else if (val === 1) {
 		return 1;
 	}	
   
