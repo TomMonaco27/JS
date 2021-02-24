@@ -28,17 +28,17 @@ function division(arg1, arg2) {
 function mathOperation(arg1, arg2, operation) {
 	switch (operation) {
 		case "addition":
-      console.log(addition(arg1, arg2));
-      break;
+      			console.log(addition(arg1, arg2));
+     			break;
 		case "subtraction":
-      console.log(subtraction(arg1, arg2));
-      break;
+      			console.log(subtraction(arg1, arg2));
+      			break;
 		case "multiplication":
-      console.log(multiplication(arg1, arg2));
-      break;
+      			console.log(multiplication(arg1, arg2));
+      			break;
 		case "division":
-      console.log(division(arg1, arg2));
-      break;
+      			console.log(division(arg1, arg2));
+      			break;
 	}
 }
 
