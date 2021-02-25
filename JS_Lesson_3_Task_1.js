@@ -4,8 +4,8 @@ let i = 0;
 
 function isPrime(n) {
     if (n < 2) { 
-		return false;
-	}
+	return false;
+    }
 
     var q = Math.floor(Math.sqrt(n));
 
@@ -19,9 +19,9 @@ function isPrime(n) {
 }
 
 while (i < 100) {
-	if (isPrime(i)) {
+   if (isPrime(i)) {
 	console.log(i)
-  }
+   }
 i++;
 
 }
