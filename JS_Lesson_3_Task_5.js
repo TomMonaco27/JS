@@ -11,8 +11,8 @@ var x = "";
 
 for (var i = 1; i < 20; i++) {
   for (var j = 0; j < i; j++) {
-		x += "x";	
+	x += "x";	
   }
-	console.log(x);
+  console.log(x);
   x = "";						// обнуляем перменную нашей "пирамидки"
 }
