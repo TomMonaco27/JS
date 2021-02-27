@@ -26,7 +26,7 @@
 		14: 1000000,
 	}
   
-	var baseQuestion = [
+var baseQuestion = [
 	{question: "Сколько лет земле?",
 	 answer1: "4,54 милларда лет",
 	 answer2: "5 миллиард лет",
@@ -140,35 +140,35 @@ alert('Правила игры:\n1. Выводится номер раунда �
 	while (!gameFinish) {
 		for (var i = 0; i < 15;i ++) {
 //  игровой раунд 
-    		round++;
-		if (round === 5 || round === 10) {
-			alert('Несгораемая сумма. Если ответите не верно, то ничего не потеряете.');
-		}
-		alert("Раунд " + round + ".Вы можете выиграть: " + MILLION[i]);
-		alert(baseQuestion[i].question + '\n1. ' + baseQuestion[i].answer1 + '\n2. ' + baseQuestion[i].answer2 + '\n3. ' + baseQuestion[i].answer3 + '\n4. ' + baseQuestion[i].answer4);
+    			round++;
+			if (round === 5 || round === 10) {
+				alert('Несгораемая сумма. Если ответите не верно, то ничего не потеряете.');
+			}
+			alert("Раунд " + round + ".Вы можете выиграть: " + MILLION[i]);
+			alert(baseQuestion[i].question + '\n1. ' + baseQuestion[i].answer1 + '\n2. ' + baseQuestion[i].answer2 + '\n3. ' + baseQuestion[i].answer3 + '\n4. ' + baseQuestion[i].answer4);
 			answerUser = prompt('Вывеберете вариант ответа: 1, 2, 3, 4. (q - выход)');
-// 	досрочный выход из игры	
-		 if (answerUser === 'q') {
-			gameFinish = true;
-			break;
-		  }
+// досрочный выход из игры	
+			 if (answerUser === 'q') {
+				gameFinish = true;
+				break;
+			  }
       
-      if (answerUser === baseQuestion[i].answerRight) {
-      	prize = MILLION[i];
-        alert("Верно! Ваш выигрыш составил: " + prize);   	
-	      
-      } else {
-      		if (round === 5 || round === 10 ) {
-         		 alert('Не Верно! Но у вас "Несгораемая сумма". Увы..Верный ответ был: ' + baseQuestion[i].answerRight);
-           		 prize = MILLION[i - 1];
-           		 gameFinish = true;
-           		 break;
-         	 } 		
-		  prize = 0;
-		  alert("Не Верно! Увы..Верный ответ был: " + baseQuestion[i].answerRight);
-		  gameFinish = true;
-		  break;
-      }
+		      if (answerUser === baseQuestion[i].answerRight) {
+			prize = MILLION[i];
+			alert("Верно! Ваш выигрыш составил: " + prize);   	
+
+		      } else {
+				if (round === 5 || round === 10 ) {
+					 alert('Не Верно! Но у вас "Несгораемая сумма". Увы..Верный ответ был: ' + baseQuestion[i].answerRight);
+					 prize = MILLION[i - 1];
+					 gameFinish = true;
+					 break;
+				 } 		
+				  prize = 0;
+				  alert("Не Верно! Увы..Верный ответ был: " + baseQuestion[i].answerRight);
+				  gameFinish = true;
+				  break;
+		      }
 			
 		}
 		gameFinish = true;
