@@ -14,7 +14,7 @@
 		сотни: 0,
 	}
 	 numberUser = prompt('Введите число от 0 до 999');
-	 if (0 > numberUser || numberUser > 999) {
+	 if (100 >= numberUser || numberUser > 999) {
 		 console.log('Число не в диапозоне от 0 до 999!');
 		 return object;
 	 }
