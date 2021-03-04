@@ -11,8 +11,6 @@ var priceGoodsCatalog = {
 	kiwi: 300
 };
 
-var priceGoodsCatalog2 = {};
-
 function showProducts(priceGoodsCatalog) {
 	var statusGoods = document.getElementById("catalog");
 	var html = '';
@@ -24,9 +22,8 @@ function showProducts(priceGoodsCatalog) {
       for (var key in priceGoodsCatalog) {
         html += '<div class = "products">' + key + ': ' + priceGoodsCatalog[key] +'</div>';
       }
-		 statusGoods.innerHTML = html;
-   }
-   
+	statusGoods.innerHTML = html;
+   }   
 }
 
 Window.onload = showProducts(priceGoodsCatalog);
