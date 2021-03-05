@@ -16,14 +16,14 @@ function showProducts(priceGoodsCatalog) {
 	var html = '';
 	
 	if (Object.keys(priceGoodsCatalog).length == 0) {  
-    	html = "Корзина пуста";
+    		html = "Корзина пуста";
 		statusGoods.innerHTML = html;
 	} else {
 		for (var key in priceGoodsCatalog) {
 			html += '<div class = "products">' + key + ': ' + priceGoodsCatalog[key] +'</div>';
 		}
 		statusGoods.innerHTML = html;
-    }   
+    	}   
 }
 
 Window.onload = showProducts(priceGoodsCatalog);
