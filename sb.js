@@ -48,7 +48,6 @@ function renderCart(){
   showCart.innerHTML = html;
 }
 
-
 warehouse.forEach(good => {
   var html = `
     <div class="goods-item">
