@@ -19,28 +19,28 @@ var warehouse = [
   {
     id: 123,
     image: 'img/123.jpg',
-    name: 'Ноубук Lenovo',
+    name: 'Ноутбук Lenovo',
     price: 500,
     amount: 100
   },
   {
     id: 124,
     image: 'img/124.jpg',
-    name: 'Ноубук Asus',
+    name: 'Ноутбук Asus',
     price: 600,
     amount: 100
   },
   {
     id: 125,
     image: 'img/125.jpg',
-    name: 'Ноубук Apple',
+    name: 'Ноутбук Apple',
     price: 700,
     amount: 100
   },
   {
     id: 126,
     image: 'img/126.jpg',
-    name: 'Ноубук Asus1',
+    name: 'Ноутбук Asus1',
     price: 800,
     amount: 100
   },
@@ -71,7 +71,6 @@ function addToCart(id){
   
   } else {
       cart[id]['count']++;
-  
   }
   renderCart();
 };
@@ -86,7 +85,6 @@ function clearInfoGoodsNone(){
 }
 
 function renderCart(){
-  
   var html = "";
   showCart =  document.getElementById('cart');
   var total = 0;
